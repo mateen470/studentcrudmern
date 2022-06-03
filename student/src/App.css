@@ -1,38 +1,93 @@
-.App {
+/* THIS STYLING WILL BE APPLIED ON App.js ONLY */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+table {
+  font-family: "Nunito", sans-serif;
+  display: inline-block;
   text-align: center;
+  margin-left: 12rem;
+  margin-top: 1rem;
+}
+.newUser {
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  box-shadow: 0 0 3px 3px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-left: 12rem;
+}
+.newUser:hover {
+  color: black;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.input {
+  font-family: "Nunito", sans-serif;
+  margin-left: 26rem;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+.input button {
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  border-radius: 2rem;
+}
+.second {
+  margin: 2rem;
+}
+input {
+  font-family: "Nunito", sans-serif;
+  border-radius: 2rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.267);
+  color: aliceblue;
+}
+.card {
+  display: inline-block;
+  margin-left: 20rem;
+  margin-top: 1rem;
+  width: 50%;
+}
+.viewH3 {
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 1024px) {
+  .input {
+    display: block;
+    margin: auto;
+  }
+  .addText {
+    padding-top: 4rem;
+  }
+  table {
+    margin-left: 0rem;
+    margin-top: 5rem;
+  }
+  .newUser {
+    margin-left: 0rem;
+    position: absolute;
+    margin-top: 3rem;
+  }
+  header {
+    width: 100%;
+  }
+  .screen {
+    overflow: auto;
+  }
+  .card {
+    margin: 0 auto;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (min-width: 1024px) {
+  .screen {
+    width: 1060px;
   }
 }
