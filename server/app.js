@@ -14,7 +14,9 @@ const app = express();
 // using a middleware for cors, json format and router
 app.use(express.json());
 app.use(router);
-app.use(cors());
+app.use(cors({
+  origin:"https://vermillion-meringue-9fb598.netlify.app"
+}));
 // as i used env file to store private data like port number, here i am giving path or that
 // file and then assigning it to a variable
 dotenv.config({ path: "config.env" });
