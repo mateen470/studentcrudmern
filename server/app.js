@@ -16,7 +16,8 @@ const app = express();
 app.use(express.json());
 app.use(router);
 app.use(cors({
-  origin:"https://vermillion-meringue-9fb598.netlify.app"
+  // origin:"https://vermillion-meringue-9fb598.netlify.app"
+  origin:"*"
 }));
 
 
