@@ -8,7 +8,7 @@ export const Home = () => {
 
   // ASYNC getData FUNCTION WITH GET METHOD TO VALIDATE AND SHOW THE DATA ON HOME PAGE
   const getData = async (e) => {
-    const res = await fetch("https://cors-anywhere.herokuapp.com/https://studentcrudmern.herokuapp.com/show", {
+    const res = await fetch("https://studentcrudmern.herokuapp.com/show", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -32,7 +32,7 @@ export const Home = () => {
   }, []);
 
   const delUser = async (id) => {
-    const res2 = await fetch(`https://cors-anywhere.herokuapp.com/https://studentcrudmern.herokuapp.com/delete/${id}`, {
+    const res2 = await fetch(`https://studentcrudmern.herokuapp.com/delete/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

@@ -36,7 +36,7 @@ export const Add = () => {
     const { name, id, department, semester, email } = val;
 
     // HERE FETCH METHOD IS BEING USED AND WE ARE USING POST METHOD T9 SEND DATA BACK TO SERVER
-    const res = await fetch("https://cors-anywhere.herokuapp.com/https://studentcrudmern.herokuapp.com/add", {
+    const res = await fetch("https://studentcrudmern.herokuapp.com/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

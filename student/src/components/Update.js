@@ -34,7 +34,7 @@ export const Update = () => {
   // BECAUSE WE WANT TO SHOW THE DATA IN THE FORM WHICH IS ALREADY EXISTING AND SETINP
   // ALREADY HAS THAT PREVIOUS DATA STORED
   const Update = async () => {
-    const res = await fetch(`https://cors-anywhere.herokuapp.com/https://studentcrudmern.herokuapp.com/view/${id}`, {
+    const res = await fetch(`https://studentcrudmern.herokuapp.com/view/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -63,7 +63,7 @@ export const Update = () => {
 
     const { name, id, department, semester, email } = val;
     
-    const res2 = await fetch(`https://cors-anywhere.herokuapp.com/https://studentcrudmern.herokuapp.com/update/${id}`, {
+    const res2 = await fetch(`https://studentcrudmern.herokuapp.com/update/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

@@ -13,12 +13,11 @@ require("./DB/connection");
 const app = express();
 
 // using a middleware for cors, json format and router
+app.use(cors({
+  origin:'https://preeminent-stardust-f1af75.netlify.app'
+}));
 app.use(express.json());
 app.use(router);
-app.use(cors({
-  // origin:"https://vermillion-meringue-9fb598.netlify.app"
-  origin:"*"
-}));
 
 
 

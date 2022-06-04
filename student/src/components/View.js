@@ -11,7 +11,7 @@ export const View = () => {
   const [getUser, setUser] = useState([]);
   // THIS FUNCTION WILL VALIDATE AND THEN STORE THE WHOLE DATA AGAINST THE ID IN getUser
   const single = async () => {
-    const res = await fetch(`https://cors-anywhere.herokuapp.com/https://studentcrudmern.herokuapp.com/view/${id}`, {
+    const res = await fetch(`https://studentcrudmern.herokuapp.com/view/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -34,7 +34,7 @@ export const View = () => {
 
   // THIS FUNCTION IS BASICALLY TO DELETE THE USER
   const delUser = async (id) => {
-    const res2 = await fetch(`https://cors-anywhere.herokuapp.com/https://studentcrudmern.herokuapp.com/delete/${id}`, {
+    const res2 = await fetch(`https://studentcrudmern.herokuapp.com/delete/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
