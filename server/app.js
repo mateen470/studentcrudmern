@@ -14,7 +14,11 @@ const app = express();
 
 // using a middleware for cors, json format and router
 app.use(cors({
-  origin:'https://preeminent-stardust-f1af75.netlify.app'
+  origin: "*",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204
+  
 }));
 app.use(express.json());
 app.use(router);
